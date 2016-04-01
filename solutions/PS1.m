@@ -3,8 +3,10 @@
 clear
 clf
 me = LotaEzenwa();
-code = me.id;
+code = me.id; 
 PS_1
+
+
 
 l = axis;
 slopeFactor = .02;
@@ -62,6 +64,11 @@ xlabel('t, min');
 ylabel('Dimensionless, log(degC/degC)');
 legend('T(t)/T_air (smoothed)','y = .05');
 
+
+cp = 875; %J/kg*K
+L = 20; %cm
+D = .25; %in
+M = 17.3; %g
 
 
 
