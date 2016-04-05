@@ -1,3 +1,5 @@
+%Lotanna Ezenwa, Problem Set 2, #1
+%PS2_1.m
 %% Due Wednesday, April 6th, 2016
 clear
 me = LotaEzenwa();
@@ -16,8 +18,8 @@ R = 1; %Ohm
 C = 1; %Farads
 
 
-V1_0 = 1; %Volts
-V2_0 = -1.421; %Volts
+V1_0 = .5; %Volts
+V2_0 = -2; %Volts
 
 syms V1 V2 p1 p2
 
@@ -48,3 +50,15 @@ q = solve(EV*[c1;c2] == [V1_0;V2_0]);
 C1 = q.c1;
 C2 = q.c2;
 
+clf 
+hold on
+tc = max([-tau_1 -tau_2]);
+t = 0:tc/100:5*tc;
+title_block = sprintf('%s - Problem Set 2, #1',me.name);
+
+plot(t,C1*exp(e1*t) + C2*exp(e2*t));
+plot(t,C1*phi1*exp(e1*t) + C2*phi2*exp(e2*t));
+title(title_block);
+xlabel('t, sec');
+ylabel('Voltage, V');
+legend('V1(t)','V2(t)');
