@@ -20,3 +20,13 @@ r_s = 5; %Ohms
 
 n = 3;
 r = 4; %Ohms
+
+nr = r*n;
+
+V3 = r_s*V_s/(r_s+nr);
+
+V = I_s*(r_s+nr);
+V0 = V;
+V3 = V - nr*I_s +V3;
+
+I = (V0-V3)/nr;
