@@ -52,6 +52,7 @@ C2 = q.c2;
 
 clf 
 hold on
+grid on
 tc = max([-tau_1 -tau_2]);
 t = 0:tc/100:5*tc;
 title_block = sprintf('%s - Problem Set 2, #1',me.name);

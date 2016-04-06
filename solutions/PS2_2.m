@@ -50,6 +50,7 @@ clf
 title_block = sprintf('%s - Problem Set 2, #2a',me.name);
 
 hold on
+grid on
 plot(t,V1);
 plot(t,V2);
 title(title_block);
@@ -81,17 +82,19 @@ for n = 2:length(V1)
 end
 
 clf
-
 title_block = sprintf('%s - Problem Set 2, #2b',me.name);
 
+
+semilogy(t,abs(V1));
 hold on
-plot(t,V1);
-plot(t,V2);
+
+grid on
+semilogy(t,abs(V2));
 title(title_block);
 
 xlabel('t, sec');
-ylabel('Voltage, V');
-legend('V1(t)','V2(t)');
+ylabel('log(Voltage), log(V)');
+legend('V1(t)','abs(V2(t))');
 
 
 dt = .0001;
@@ -122,6 +125,7 @@ clf
 title_block = sprintf('%s - Problem Set 2, #2e',me.name);
 
 hold on
+grid on
 plot(V1,V2);
 title(title_block);
 
