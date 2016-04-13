@@ -24,6 +24,7 @@ end
 
 clf
 hold on
+grid on
 title_block = sprintf('%s - Problem Set 3, #3b, N = %d',me.name,N);
 plot(t,t.*m+c,'--');
 plot(t,f);
@@ -44,6 +45,7 @@ end
 
 clf
 hold on
+grid on
 title_block = sprintf('%s - Problem Set 3, #3b, N = %d',me.name,N);
 plot(t,t.*m+c,'--');
 plot(t,f);
@@ -65,6 +67,7 @@ end
 
 clf
 hold on
+grid on
 title_block = sprintf('%s - Problem Set 3, #3b, N = %d',me.name,N);
 plot(t,t.*m+c,'--');
 plot(t,f);
@@ -86,6 +89,7 @@ end
 
 clf
 hold on
+grid on
 title_block = sprintf('%s - Problem Set 3, #3b, N = %d',me.name,N);
 plot(t,t.*m+c,'--');
 plot(t,f);
