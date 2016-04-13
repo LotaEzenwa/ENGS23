@@ -1,5 +1,5 @@
 %Lotanna Ezenwa, Problem Set 3, #2
-%PS3_3.m
+%PS3_2.m
 %% Due Wednesday, April 13th, 2016
 
 
